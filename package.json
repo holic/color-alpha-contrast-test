@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "basscss-color-alpha-test",
+  "author": "Kevin Ingersoll <kingersoll@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "color": "^0.10.1",
+    "colors.css": "^2.3.0",
+    "vue": "^0.12.7",
+    "watchify": "^3.2.3"
+  },
+  "scripts": {
+    "dev": "watchify -o public/app.js src/index.js"
+  }
+}

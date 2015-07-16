@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color test</title>
+
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+		}
+		* {
+			margin: 0;
+		}
+		.combo {
+			padding: 3rem;
+		}
+	</style>
+</head>
+<body>
+	<div v-repeat="combos">
+		<div class="combo" style="background-color: {{ backgroundColor.hexString() }}; color: {{ textColor.rgbaString() }}">
+			<h1>{{ Math.floor(contrast * 100) / 100 }}</h1>
+			<h2>{{ textColor.name }} on {{ backgroundColor.name}}</h2>
+			<p>{{ textColor.rgbaString() }} on {{ backgroundColor.hexString() }}</p>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
